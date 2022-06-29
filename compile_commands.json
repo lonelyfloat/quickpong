@@ -1,0 +1,122 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Wall",
+      "-std=c99",
+      "-Iinclude",
+      "-o",
+      "game",
+      "src/level/sequence.c"
+    ],
+    "directory": "/home/lonelyfloat/dev/C/raylib/bullethell",
+    "file": "/home/lonelyfloat/dev/C/raylib/bullethell/src/level/sequence.c",
+    "output": "/home/lonelyfloat/dev/C/raylib/bullethell/game"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Wall",
+      "-std=c99",
+      "-Iinclude",
+      "-o",
+      "game",
+      "src/texture/texture.c"
+    ],
+    "directory": "/home/lonelyfloat/dev/C/raylib/bullethell",
+    "file": "/home/lonelyfloat/dev/C/raylib/bullethell/src/texture/texture.c",
+    "output": "/home/lonelyfloat/dev/C/raylib/bullethell/game"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Wall",
+      "-std=c99",
+      "-Iinclude",
+      "-o",
+      "game",
+      "src/level/level.c"
+    ],
+    "directory": "/home/lonelyfloat/dev/C/raylib/bullethell",
+    "file": "/home/lonelyfloat/dev/C/raylib/bullethell/src/level/level.c",
+    "output": "/home/lonelyfloat/dev/C/raylib/bullethell/game"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Wall",
+      "-std=c99",
+      "-Iinclude",
+      "-o",
+      "game",
+      "src/ecs/spawnfuncs.c"
+    ],
+    "directory": "/home/lonelyfloat/dev/C/raylib/bullethell",
+    "file": "/home/lonelyfloat/dev/C/raylib/bullethell/src/ecs/spawnfuncs.c",
+    "output": "/home/lonelyfloat/dev/C/raylib/bullethell/game"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Wall",
+      "-std=c99",
+      "-Iinclude",
+      "-o",
+      "game",
+      "src/ecs/systems.c"
+    ],
+    "directory": "/home/lonelyfloat/dev/C/raylib/bullethell",
+    "file": "/home/lonelyfloat/dev/C/raylib/bullethell/src/ecs/systems.c",
+    "output": "/home/lonelyfloat/dev/C/raylib/bullethell/game"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Wall",
+      "-std=c99",
+      "-Iinclude",
+      "-o",
+      "game",
+      "src/ecs/manager.c"
+    ],
+    "directory": "/home/lonelyfloat/dev/C/raylib/bullethell",
+    "file": "/home/lonelyfloat/dev/C/raylib/bullethell/src/ecs/manager.c",
+    "output": "/home/lonelyfloat/dev/C/raylib/bullethell/game"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Wall",
+      "-std=c99",
+      "-Iinclude",
+      "-o",
+      "game",
+      "src/behaviors/behaviors.c"
+    ],
+    "directory": "/home/lonelyfloat/dev/C/raylib/bullethell",
+    "file": "/home/lonelyfloat/dev/C/raylib/bullethell/src/behaviors/behaviors.c",
+    "output": "/home/lonelyfloat/dev/C/raylib/bullethell/game"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Wall",
+      "-std=c99",
+      "-Iinclude",
+      "-o",
+      "game",
+      "src/main.c"
+    ],
+    "directory": "/home/lonelyfloat/dev/C/raylib/bullethell",
+    "file": "/home/lonelyfloat/dev/C/raylib/bullethell/src/main.c",
+    "output": "/home/lonelyfloat/dev/C/raylib/bullethell/game"
+  }
+]

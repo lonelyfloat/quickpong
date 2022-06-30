@@ -9,6 +9,7 @@ int main(void) {
     const int screenHeight = 450;
     float ballSpeed = 100;
     float paddleSpeed = 200;
+    float acceleration = 100;
 
     Vector2 ballPos = {screenWidth/2., screenHeight/2.};
     Vector2 ballVel = {-ballSpeed, -ballSpeed};
@@ -58,18 +59,21 @@ int main(void) {
            ++score;
         }
         
-        if (ballPos.x > screenWidth/2.) {
-            opponentVel = Clamp(ballPos.y - opponentPaddle.y, -1, 1);
+        // TODO: Fix these they don't work how i want
+        if (ballPos.x > screenWidth/2.) { 
+            opponentVel = Clamp(ballPos.y - opponentPaddle.y, -paddleSpeed, paddleSpeed); 
         }
         else {
-             opponentVel = Clamp(screenHeight/2. - 50 - opponentPaddle.y, -1, 1);
+             opponentVel = Clamp(screenHeight/2. - 50 - opponentPaddle.y, -paddleSpeed, paddleSpeed);
         }
-        opponentPaddle.y += opponentVel * paddleSpeed * GetFrameTime();
+
+        
+        printf("%f\n", ballPos.y - opponentPaddle.y);
+        opponentPaddle.y += opponentVel * GetFrameTime();
         playerPaddle.y += ( (IsKeyDown(KEY_S)) - (IsKeyDown(KEY_W)) ) * paddleSpeed * GetFrameTime();
         ballPos = Vector2Add (ballPos, Vector2Multiply(Vector2Normalize(ballVel), (Vector2){ballSpeed * GetFrameTime(), ballSpeed * GetFrameTime()} ) );
-        playerPaddle.y = Clamp(playerPaddle.y, 0, screenHeight-100);
         opponentPaddle.y = Clamp(opponentPaddle.y, 0, screenHeight-100);
-
+        playerPaddle.y = Clamp(playerPaddle.y, 0, screenHeight-100); 
         //----------------------------------------------------------------------------------
 
         // Draw
